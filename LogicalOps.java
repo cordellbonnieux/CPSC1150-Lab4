@@ -1,6 +1,6 @@
 /**
 * Title: LogicalOps
-* Description: Tests to see if an integer is diviside by 5 or 6 or both.
+* Description: Tests to see if an integer is diviside by 5 or 6 or both (or by just one!).
 * Author: Cordell Bonnieux
 * Date: 31/05/2021
 * Class: CPSC 1150
@@ -47,7 +47,5 @@ public class LogicalOps {
         } else {
             System.out.println("false");
         }
-
-
     }
 }
