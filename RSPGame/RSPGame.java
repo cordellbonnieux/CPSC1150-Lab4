@@ -21,20 +21,18 @@ public class RSPGame {
         // computer generates a number between 0 and 3
         int computer = 0 + (int) (Math.random() * 3);
 
+        // display the plays in the comsole
+        System.out.println("Computer played: " + playName(computer));
+        System.out.println("You played: " + playName(user));
 
-
-
-
-
-
-        /**
-        for (int i = 0; i < 20; i++) {
-            // computer generates a number between 0 and 3
-            int computer = 0 + (int) (Math.random() * 3);
-            System.out.println(computer);
-
-        }
-        */
+        // check to see who won and print the appropriate message
+        if ((user == 0 && computer == 1) || (user == 1 && computer == 2) || (user == 2 && computer == 0))
+            System.out.println("You win!");
+        else if ((computer == 0 && user == 1) || (computer == 1 && user == 2) || (computer == 2 && user == 0))
+            System.out.println("You loose!");
+        else 
+            System.out.println("It's a draw!");
+        
     }
     public static int userPlay(Scanner input) {
 
@@ -53,6 +51,17 @@ public class RSPGame {
 
             // if user input is valid, return it
             return num;
+
+    }
+    public static String playName(int play) {
+        
+        // return the name of the play (i.e. rock, paper or scissors)
+        if (play == 0)
+            return "rock";
+        else if (play == 1)
+            return "scissors";
+        else 
+            return "paper";
 
     }
 }
