@@ -18,12 +18,20 @@ public class LogicalOps {
         // 3. if it's valid it is store in 'user' - if not, the method restarts
         int user = userPlay(input);
 
+        //
+        int min = 0, max  = 2;
+
+        //
+        double computer = Math.random() * (3);
+
+        System.out.println(computer);
+
         
 
 
 
     }
-    public static int userPlay(input) {
+    public static int userPlay(Scanner input) {
 
         // prompt the user to enter 0, 1 or 2
         System.out.println("Select: rock (0), scissors (1), or paper (2)");
