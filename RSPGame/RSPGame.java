@@ -7,7 +7,7 @@
 * Assignment: Lab4
 **/
 import java.util.Scanner;
-public class LogicalOps {
+public class RSPGame {
     public static void main(String[] args){
 
         // create scanner object
@@ -18,18 +18,23 @@ public class LogicalOps {
         // 3. if it's valid it is store in 'user' - if not, the method restarts
         int user = userPlay(input);
 
-        //
-        int min = 0, max  = 2;
-
-        //
-        double computer = Math.random() * (3);
-
-        System.out.println(computer);
-
-        
+        // computer generates a number between 0 and 3
+        int computer = 0 + (int) (Math.random() * 3);
 
 
 
+
+
+
+
+        /**
+        for (int i = 0; i < 20; i++) {
+            // computer generates a number between 0 and 3
+            int computer = 0 + (int) (Math.random() * 3);
+            System.out.println(computer);
+
+        }
+        */
     }
     public static int userPlay(Scanner input) {
 
