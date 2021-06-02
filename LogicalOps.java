@@ -43,9 +43,9 @@ public class LogicalOps {
         // is num divided by 5 or 6 but noth both?
         System.out.print("Is " + num + " divisible by 5 or 6, but not both? ");
         if (modByOne && !modByBoth) {
-            System.out.println("true");
+            System.out.println(modByOne);
         } else {
-            System.out.println("false");
+            System.out.println(false);
         }
     }
 }
