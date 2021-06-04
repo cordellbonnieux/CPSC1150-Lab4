@@ -18,7 +18,7 @@ public class RSPGame {
         // 3. if it's valid it is store in 'user' - if not, the method restarts
         int user = userPlay(input);
 
-        // computer generates a number between 0 and 3
+        // computer generates an integer; either 0, 1 or 2
         int computer = 0 + (int) (Math.random() * 3);
 
         // display the plays in the comsole
